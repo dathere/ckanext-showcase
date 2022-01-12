@@ -1,18 +1,19 @@
-# Translations template for ckanext-showcase.
+# English translations for ckanext-showcase.
 # Copyright (C) 2022 ORGANIZATION
 # This file is distributed under the same license as the ckanext-showcase
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-showcase 1.4.7\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-01-12 04:21-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2022-01-12 04:07-0500\n"
+"PO-Revision-Date: 2022-01-12 03:34-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,23 +31,23 @@ msgstr ""
 #: ckanext/showcase/utils.py:537 ckanext/showcase/utils.py:590
 #: ckanext/showcase/utils.py:606
 msgid "Showcase not found"
-msgstr ""
+msgstr "Application not found"
 
 #: ckanext/showcase/utils.py:85 ckanext/showcase/utils.py:121
 msgid "Unauthorized to read showcase"
-msgstr ""
+msgstr "Unauthorized to read application"
 
 #: ckanext/showcase/utils.py:151 ckanext/showcase/utils.py:609
 msgid "The dataset has been removed from the showcase."
 msgid_plural "The datasets have been removed from the showcase."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "The dataset has been removed from the application."
+msgstr[1] "The datasets have been removed from the application."
 
 #: ckanext/showcase/utils.py:183 ckanext/showcase/utils.py:593
 msgid "The dataset has been added to the showcase."
 msgid_plural "The datasets have been added to the showcase."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "The dataset has been added to the application."
+msgstr[1] "The datasets have been added to the application."
 
 #: ckanext/showcase/templates/header.html:15 ckanext/showcase/utils.py:422
 msgid "Organizations"
@@ -76,11 +77,11 @@ msgstr ""
 
 #: ckanext/showcase/utils.py:521 ckanext/showcase/utils.py:535
 msgid "Unauthorized to delete showcase"
-msgstr ""
+msgstr "Unauthorized to delete application"
 
 #: ckanext/showcase/utils.py:531
 msgid "Showcase has been deleted."
-msgstr ""
+msgstr "Application has been deleted."
 
 #: ckanext/showcase/utils.py:555 ckanext/showcase/utils.py:566
 msgid "Dataset not found"
@@ -108,15 +109,15 @@ msgstr ""
 
 #: ckanext/showcase/utils.py:659
 msgid "The user is now a Showcase Admin"
-msgstr ""
+msgstr "The user is now an Application Admin"
 
 #: ckanext/showcase/utils.py:704
 msgid "The user is not a Showcase Admin"
-msgstr ""
+msgstr "The user is not an Application Admin"
 
 #: ckanext/showcase/utils.py:706
 msgid "The user is no longer a Showcase Admin"
-msgstr ""
+msgstr "The user is no longer an Application Admin"
 
 #: ckanext/showcase/utils.py:748
 msgid "Only Posting is availiable"
@@ -127,16 +128,19 @@ msgstr ""
 msgid "Unauthorized to upload file %s"
 msgstr ""
 
-#: ckanext/showcase/logic/converters.py:24 ckanext/showcase/logic/validators.py:29
+#: ckanext/showcase/logic/converters.py:24
+#: ckanext/showcase/logic/validators.py:29
 msgid "Not found"
 msgstr ""
 
-#: ckanext/showcase/logic/converters.py:24 ckanext/showcase/logic/validators.py:29
+#: ckanext/showcase/logic/converters.py:24
+#: ckanext/showcase/logic/validators.py:29
 msgid "Dataset"
 msgstr ""
 
-#: ckanext/showcase/plugin/__init__.py:64 ckanext/showcase/plugin/__init__.py:67
-msgid "Showcase Config"
+#: ckanext/showcase/plugin/__init__.py:64
+#: ckanext/showcase/plugin/__init__.py:67
+msgid "Application Config"
 msgstr ""
 
 #: ckanext/showcase/templates/header.html:14
@@ -154,7 +158,7 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/search.html:8
 #: ckanext/showcase/templates/showcase/search.html:11
 msgid "Showcases"
-msgstr ""
+msgstr "Applications"
 
 #: ckanext/showcase/templates/header.html:18
 msgid "About"
@@ -167,7 +171,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:13
 msgid "Are you sure you want to remove this user as a Showcase Admin - {name}?"
-msgstr ""
+msgstr "Are you sure you want to remove this user as a Application Admin - {name}?"
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:17
 #: ckanext/showcase/templates/showcase/confirm_delete.html:21
@@ -176,15 +180,19 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:12
 msgid "Manage Showcase Admins"
-msgstr ""
+msgstr "Manage Application Admins"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:19
 msgid "Add an Existing User"
 msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:22
-msgid "To make an existing user a Showcase Admin, search for their username below."
+msgid ""
+"To make an existing user a Showcase Admin, search for their username "
+"below."
 msgstr ""
+"To make an existing user an Application Admin, search for their username "
+"below."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:26
 msgid "Username"
@@ -196,7 +204,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:41
 msgid "Showcase Admins"
-msgstr ""
+msgstr "Application Admins"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:46
 msgid "User"
@@ -204,7 +212,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:54
 msgid "Are you sure you want to remove this user from the Showcase Admin list?"
-msgstr ""
+msgstr "Are you sure you want to remove this user from the Application Admin list?"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:56
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:50
@@ -213,13 +221,15 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:64
 msgid "There are currently no Showcase Admins."
-msgstr ""
+msgstr "There are currently no Application Admins."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:72
 msgid ""
-"<p><strong>Showcase Admin:</strong> Can create and remove showcases. Can add "
-"and remove datasets from showcases.</p>"
+"<p><strong>Showcase Admin:</strong> Can create and remove showcases. Can "
+"add and remove datasets from showcases.</p>"
 msgstr ""
+"<p><strong>Application Admin:</strong> Can create and remove "
+"applications. Can add and remove datasets from applications.</p>"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:8
 msgid "{site_title} statistics"
@@ -246,12 +256,12 @@ msgstr[1] ""
 #: ckanext/showcase/templates/home/snippets/stats.html:31
 msgid "showcase"
 msgid_plural "showcases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "application"
+msgstr[1] "applications"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
-msgstr ""
+msgstr "Associate this application with this dataset"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Add to dataset"
@@ -259,15 +269,15 @@ msgstr ""
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:17
 msgid "Showcases featuring {dataset_name}"
-msgstr ""
+msgstr "Applications featuring {dataset_name}"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
-msgstr ""
+msgstr "There are no applications that feature this dataset"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:3
 msgid "Showcases - Add datasets"
-msgstr ""
+msgstr "Applications - Add datasets"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:21
 #: ckanext/showcase/templates/showcase/manage_datasets.html:24
@@ -302,12 +312,12 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/add_datasets.html:31
 #: ckanext/showcase/templates/showcase/manage_datasets.html:36
 msgid "Datasets available to add to this showcase"
-msgstr ""
+msgstr "Datasets available to add to this application"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
 msgid "Add to Showcase"
-msgstr ""
+msgstr "Add to Application"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
@@ -321,7 +331,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/confirm_delete.html:18
 msgid "Are you sure you want to delete showcase - {showcase_name}?"
-msgstr ""
+msgstr "Are you sure you want to delete application - {showcase_name}?"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:27
 msgid "Edit"
@@ -331,15 +341,15 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/new.html:3
 #: ckanext/showcase/templates/showcase/new_package_form.html:79
 msgid "Create Showcase"
-msgstr ""
+msgstr "Create Application"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:43
 msgid "View showcase"
-msgstr ""
+msgstr "View application"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:49
 msgid "Edit showcase"
-msgstr ""
+msgstr "Edit application"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:50
 msgid "Manage datasets"
@@ -351,19 +361,19 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:96
 msgid "Datasets in this showcase"
-msgstr ""
+msgstr "Datasets in this application"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:109
 msgid "Remove from Showcase"
-msgstr ""
+msgstr "Remove from Application"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:140
 msgid "This showcase has no datasets associated to it"
-msgstr ""
+msgstr "This application has no datasets associated to it"
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
-msgstr ""
+msgstr "Create an Application"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:19
 msgid "Title"
@@ -379,7 +389,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:28
 msgid "eg. my-showcase"
-msgstr ""
+msgstr "eg. my-application"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:41
 #: ckanext/showcase/templates/showcase/new_package_form.html:43
@@ -429,7 +439,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:79
 msgid "Update Showcase"
-msgstr ""
+msgstr "Update"
 
 #: ckanext/showcase/templates/showcase/read.html:56
 msgid "Manage"
@@ -450,23 +460,27 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/search.html:17
 msgid "Add Showcase"
-msgstr ""
+msgstr "Add Application"
 
 #: ckanext/showcase/templates/showcase/search.html:37
 msgid "Search showcases..."
-msgstr ""
+msgstr "Search applications..."
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:7
 msgid "What are Showcases?"
-msgstr ""
+msgstr "What are Applications?"
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:11
 msgid ""
-"Datasets have been used to build apps, websites and visualizations. They've "
-"been featured in articles, and written about in news reports and blog posts. "
-"Showcases collect together the best examples of datasets in use, to provide "
-"further insight, ideas, and inspiration."
+"Datasets have been used to build apps, websites and visualizations. "
+"They've been featured in articles, and written about in news reports and "
+"blog posts. Showcases collect together the best examples of datasets in "
+"use, to provide further insight, ideas, and inspiration."
 msgstr ""
+"Datasets have been used to build apps, websites and visualizations. "
+"They've been featured in articles, and written about in news reports and "
+"blog posts. Applications collect together the best examples of datasets "
+"in use, to provide further insight, ideas, and inspiration."
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:15
 #, python-format
@@ -474,6 +488,8 @@ msgid ""
 "Sysadmins can manage Showcase Admins from the <a href='%(url)s'>Showcase "
 "configuration page</a>."
 msgstr ""
+"Sysadmins can manage Application Admins from the <a "
+"href='%(url)s'>Application configuration page</a>."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:21
 msgid "Submitted by"
@@ -481,15 +497,15 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
 msgid "Datasets in Showcase"
-msgstr ""
+msgstr "Datasets in Application"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
 msgid "There are no Datasets in this Showcase"
-msgstr ""
+msgstr "There are no Datasets in this Application"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:34
 msgid "This showcase has no description"
-msgstr ""
+msgstr "This application has no description"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:39
 msgid "{num} Dataset"
@@ -508,25 +524,25 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:50
 msgid "Remove dataset from this showcase"
-msgstr ""
+msgstr "Remove dataset from this application"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
 msgid "{number} showcase found for '{query}'"
 msgid_plural "{number} showcases found for '{query}'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{number} application found for '{query}'"
+msgstr[1] "{number} applications found for '{query}'"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:8
 msgid "No showcases found for '{query}'"
-msgstr ""
+msgstr "No applications found for '{query}'"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
 msgid "{number} showcase found"
 msgid_plural "{number} showcases found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{number} application found"
+msgstr[1] "{number} applications found"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:10
 msgid "No showcases found"
-msgstr ""
+msgstr "No applications found"
 
