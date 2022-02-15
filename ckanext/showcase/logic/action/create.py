@@ -10,6 +10,8 @@ import ckanext.showcase.logic.converters as showcase_converters
 import ckanext.showcase.logic.schema as showcase_schema
 from ckanext.showcase.model import ShowcasePackageAssociation, ShowcaseAdmin
 
+import ckanext.showcase.utils as utils
+
 convert_package_name_or_id_to_title_or_name = \
     showcase_converters.convert_package_name_or_id_to_title_or_name
 showcase_package_association_create_schema = \
@@ -38,6 +40,8 @@ def showcase_create(context, data_dict):
     upload.upload(uploader.get_max_image_size())
 
     pkg = toolkit.get_action('package_create')(context, data_dict)
+
+    utils.create_thumbnail( data_dict['image_url'] )
 
     return pkg
 
