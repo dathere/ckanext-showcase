@@ -1,6 +1,6 @@
 import ckan.lib.helpers as h
 from ckan.plugins import toolkit as tk
-
+from os.path import exists
 
 def facet_remove_field(key, value=None, replace=None):
     '''
@@ -44,4 +44,18 @@ def get_value_from_showcase_extras(extras, key):
         if item.get('key') == key:
             value = item.get('value')
     return value
-    
+
+# look for a thumbnail image for image found at path image_url and returns the thumbnail url if it exists
+# if no thumbnail exists, the original image_fp is returned
+def get_thumbnail( image_name ):
+
+    # convert image url to file path
+    #image_fp = tk.config.get("ckan.storage_path") + '/storage' + image_name
+
+    # convert image_fp to thumb_fp by adding -thumbnail before the file extension
+    thumb_name =  "{0}-{2}.{1}".format(*image_name.rsplit('.', 1) + ['thumbnail'])
+
+    if exists( tk.config.get("ckan.storage_path") + '/storage/uploads/showcase/' + thumb_name ):
+        return thumb_name
+    else:
+        return image_name
