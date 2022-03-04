@@ -38,7 +38,7 @@
 {% endblock %}
 
 {% block package_search_results_list %}
-  {{ h.snippet('showcase/snippets/showcase_list.html', packages=c.page.items) }}
+  {{ h.snippet('showcase/snippets/showcase_list.html', item_class="media-item", packages=c.page.items) }}
 {% endblock %}
 
 {% block package_search_results_api %}

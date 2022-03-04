@@ -49,11 +49,18 @@ def get_value_from_showcase_extras(extras, key):
 # if no thumbnail exists, the original image_fp is returned
 def get_thumbnail( image_name ):
 
+    thumb_name = "";
+
     # convert image url to file path
     #image_fp = tk.config.get("ckan.storage_path") + '/storage' + image_name
 
-    # convert image_fp to thumb_fp by adding -thumbnail before the file extension
-    thumb_name =  "{0}-{2}.{1}".format(*image_name.rsplit('.', 1) + ['thumbnail'])
+    if image_name != None and "." in image_name:
+
+        if image_name.startswith( 'http' ):
+            image_name =  "{1}".format( *image_name.rsplit('/', 1) )
+
+        # convert image_fp to thumb_fp by adding -thumbnail before the file extension
+        thumb_name =  "{0}-{2}.{1}".format(*image_name.rsplit('.', 1) + ['thumbnail'])
 
     if exists( tk.config.get("ckan.storage_path") + '/storage/uploads/showcase/' + thumb_name ):
         return thumb_name

@@ -45,7 +45,10 @@ def showcase_list(context, data_dict):
 
     showcase_list = []
     for pkg in q.all():
-        showcase_list.append(model_dictize.package_dictize(pkg, context))
+        pkg_dict = model_dictize.package_dictize(pkg, context)
+        # Add dataset count
+        pkg_dict[u'num_datasets'] = len( toolkit.get_action('ckanext_showcase_package_list')( context, {'showcase_id': pkg_dict['id']}))
+        showcase_list.append( pkg_dict )
 
     return showcase_list
 
