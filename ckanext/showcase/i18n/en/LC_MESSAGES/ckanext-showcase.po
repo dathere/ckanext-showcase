@@ -529,8 +529,8 @@ msgstr "Remove dataset from this application"
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
 msgid "{number} showcase found for '{query}'"
 msgid_plural "{number} showcases found for '{query}'"
-msgstr[0] "{number} application found for '{query}'"
-msgstr[1] "{number} applications found for '{query}'"
+msgstr[0] "{number} Application found for '{query}'"
+msgstr[1] "{number} Applications found for '{query}'"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:8
 msgid "No showcases found for '{query}'"
@@ -539,8 +539,8 @@ msgstr "No applications found for '{query}'"
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
 msgid "{number} showcase found"
 msgid_plural "{number} showcases found"
-msgstr[0] "{number} application found"
-msgstr[1] "{number} applications found"
+msgstr[0] "{number} Application found"
+msgstr[1] "{number} Applications found"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:10
 msgid "No showcases found"
