@@ -770,31 +770,3 @@ def upload():
 
     return json.dumps(url)
 
-# Create a thumbnail image in the samee directory the original image exists in
-# thumbnail for image.png will be called image-thumbnail.png
-def create_thumbnail( image_url ):
-
-    if image_url and image_url[0:6] not in {'http:/', 'https:'}:
-        image_url = h.url_for_static(
-           'uploads/showcase/{}'.format(image_url),
-            qualified=True
-        )
-        image_fp = image_url.replace( tk.config.get("ckan.site_url"), tk.config.get("ckan.storage_path") + '/storage' )
-
-    thumb_fp =  "{0}-{2}.{1}".format(*image_fp.rsplit('.', 1) + ['thumbnail'])
-
-    try:
-        image = Image.open(image_fp)
-    except IOError:
-        #if an image can't be parsed from the response...
-        log.debug( IOError )
-        return None 
-
-    width = int( tk.config.get('ckan.thumbnail_width', 200) )
-    height = int( tk.config.get('ckan.thumbnail_height', 200) )
-
-    image.thumbnail( ( width, height ) )
-    image.save( thumb_fp )
-
-    return True
-
