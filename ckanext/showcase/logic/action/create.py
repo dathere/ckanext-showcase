@@ -41,8 +41,6 @@ def showcase_create(context, data_dict):
 
     pkg = toolkit.get_action('package_create')(context, data_dict)
 
-    utils.create_thumbnail( data_dict['image_url'] )
-
     return pkg
 
 
