@@ -468,7 +468,8 @@ msgstr "Search applications..."
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:7
 msgid "What are Showcases?"
-msgstr "What are Applications?"
+msgstr "What are applications and linked resources?"
+
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:11
 msgid ""
