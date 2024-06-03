@@ -127,7 +127,7 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
         return {
             'facet_remove_field': showcase_helpers.facet_remove_field,
             'get_site_statistics': showcase_helpers.get_site_statistics,
-            'get_wysiwyg_editor': showcase_helpers.get_wysiwyg_editor,
+            'get_wysiwyg_editor': showcase_helpers.showcase_get_wysiwyg_editor,
             'get_value_from_showcase_extras': showcase_helpers.get_value_from_showcase_extras,
             'get_thumbnail': showcase_helpers.get_thumbnail,
             'showcase_get_wysiwyg_editor': showcase_helpers.showcase_get_wysiwyg_editor,
