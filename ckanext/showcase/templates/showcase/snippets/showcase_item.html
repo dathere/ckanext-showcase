@@ -27,7 +27,7 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
     {% endblock %}
     {% block notes %}
       {% if notes %}
-        <div>{{ notes|urlize }}</div>
+        <div>{{ notes|urlize|truncate(120) }}</div>
       {% else %}
         <p class="empty">{{ _("This showcase has no description") }}</p>
       {% endif %}
