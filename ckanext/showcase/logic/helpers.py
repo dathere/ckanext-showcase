@@ -1,3 +1,5 @@
+from os.path import exists
+
 import ckan.lib.helpers as h
 from ckan.plugins import toolkit as tk
 
